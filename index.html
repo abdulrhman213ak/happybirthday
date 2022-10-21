@@ -22,39 +22,166 @@
     <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
     <meta content="clickberry-extension-here">
     <link rel="stylesheet" href="styles.css">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 
 <body>
     <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
     <div class="container">
-        <div class="balloon">
-            <div><span style='font-size:60px;'>&#128525;</span>
+        <div class="balloon" id="balon">
+            <div id="1"><span style='font-size:60px;'>&#128525;</span>
             </div>
-            <div><span>B</span>
+            <div  id="2"><span>B</span>
             </div>
-            <div><span>D</span>
+            <div  id="3"><span>D</span>
             </div>
-            <div><span>A</span>
+            <div  id="4"><span>A</span>
             </div>
-            <div><span>Y</span>
+            <div  id="5"><span>Y</span>
             </div>
-            <div><span>!</span>
+            <div  id="6"><span>!</span>
             </div>
         </div>
-        <h1 class = "font">Rana </h1>
-        <h1 style="color: rgba(45, 181, 167, 0.9);">you are the CSS to my html ❤</h1>
+        <h1 class = "font" id="test">Rana </h1>
+        <h1 style="color: rgba(45, 181, 167, 0.9);" id="test2">you are the CSS to my html ❤</h1>
     </div>
     <div class="flex-container">
-        <div class="box box2"> <img src="statics/1.jpg" width="300" height="300">
-        <div class="box box2"> <img src="statics/2.jpg" width="300" height="300">
-        <div class="box box2"> <img src="statics/3.jpg" width="300" height="300">
-        <div class="box box2"> <img src="statics/5.jpg" width="300" height="300">
+        <div class="box box2" id = "test3"> <img src="statics/1.jpg" width="300" height="300">
+        <div class="box box2" id = "test4"> <img src="statics/2.jpg" width="300" height="300">
+        <div class="box box2" id = "test5"> <img src="statics/3.jpg" width="300" height="300">
+        <div class="box box2" id = "test6"> <img src="statics/5.jpg" width="300" height="300">
     </div>
 
     <script>
         if (document.location.search.match(/type=embed/gi)) {
             window.parent.postMessage('resize', "*");
         }
+            // setTimeout(() => {
+            //     const box = document.getElementById('test');
+
+            //     // 👇️ removes element from DOM
+            //     box.style.display = 'none';
+
+            //     // 👇️ hides element (still takes up space on page)
+            //     // box.style.visibility = 'hidden';
+            // }, 1000); // 👈️ time in milliseconds\
+//             setTimeout(function(){
+//    $('#test').show();// or fade, css display however you'd like.
+// }, 5000);
+$(document).ready(function() {
+
+// Hide the div
+$("#1").hide();
+
+// Show the div in 5s
+$("#1").delay(1000).fadeIn(500);
+
+});
+$(document).ready(function() {
+
+// Hide the div
+$("#2").hide();
+
+// Show the div in 5s
+$("#2").delay(2000).fadeIn(500);
+
+});
+$(document).ready(function() {
+
+// Hide the div
+$("#3").hide();
+
+// Show the div in 5s
+$("#3").delay(3000).fadeIn(500);
+
+});
+$(document).ready(function() {
+
+// Hide the div
+$("#4").hide();
+
+// Show the div in 5s
+$("#4").delay(4000).fadeIn(500);
+
+});
+$(document).ready(function() {
+
+// Hide the div
+$("#5").hide();
+
+// Show the div in 5s
+$("#5").delay(5000).fadeIn(500);
+
+});
+$(document).ready(function() {
+
+// Hide the div
+$("#6").hide();
+
+// Show the div in 5s
+$("#6").delay(6000).fadeIn(500);
+
+});
+$(document).ready(function() {
+
+// Hide the div
+$("#test").hide();
+
+// Show the div in 5s
+$("#test").delay(7000).fadeIn(500);
+
+});
+
+$(document).ready(function() {
+
+// Hide the div
+$("#test2").hide();
+
+// Show the div in 5s
+$("#test2").delay(9000).fadeIn(500);
+
+});
+
+$(document).ready(function() {
+
+// Hide the div
+$("#test3").hide();
+
+// Show the div in 5s
+$("#test3").delay(12000).fadeIn(500);
+
+});
+
+$(document).ready(function() {
+
+// Hide the div
+$("#test4").hide();
+
+// Show the div in 5s
+$("#test4").delay(15000).fadeIn(500);
+
+});
+
+$(document).ready(function() {
+
+// Hide the div
+$("#test5").hide();
+
+// Show the div in 5s
+$("#test5").delay(18000).fadeIn(500);
+
+});
+
+$(document).ready(function() {
+
+// Hide the div
+$("#test6").hide();
+
+// Show the div in 5s
+$("#test6").delay(21000).fadeIn(500);
+
+});
+
     </script>
 
 
